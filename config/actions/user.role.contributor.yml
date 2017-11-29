@@ -1,0 +1,10 @@
+path:
+  - permissions
+plugin: add
+actions:
+  'create article content':
+    value: 'create resource content'
+  'delete own article content':
+    value: 'delete own resource content'
+  'edit own article content':
+    value: 'edit own resource content'
