@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_tags
+    - field.storage.node.field_topics
     - node.type.resource
-    - taxonomy.vocabulary.tags
-id: node.resource.field_tags
-field_name: field_tags
+    - taxonomy.vocabulary.topics
+id: node.resource.field_topics
+field_name: field_topics
 entity_type: node
 bundle: resource
-label: Tags
-description: 'Enter a comma-separated list. For example: Amsterdam, Mexico City, "Cleveland, Ohio"'
+label: Topics
+description: 'Choose one or more high-level topics to categorize your content across multiple content types.'
 required: false
 translatable: true
 default_value: {  }
@@ -19,10 +19,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      topics: topics
     sort:
       field: name
       direction: asc
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

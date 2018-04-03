@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.resource.field_resource_type
     - field.field.node.resource.field_summary
     - field.field.node.resource.field_tags
+    - field.field.node.resource.field_topics
     - node.type.resource
   module:
     - ds
@@ -43,6 +44,7 @@ third_party_settings:
         - field_resource_link
         - field_resource_file
         - field_resource_type
+        - field_topics
         - field_tags
 id: node.resource.search_index
 targetEntityType: node
@@ -70,7 +72,8 @@ content:
     weight: 3
     region: ds_content
     label: hidden
-    settings: {  }
+    settings:
+      use_description_as_link_text: true
     third_party_settings: {  }
   field_resource_link:
     type: link_separate
@@ -93,6 +96,14 @@ content:
       link: true
     third_party_settings: {  }
   field_tags:
+    type: entity_reference_label
+    weight: 6
+    region: ds_content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_topics:
     type: entity_reference_label
     weight: 5
     region: ds_content

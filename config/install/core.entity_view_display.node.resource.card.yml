@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.resource.field_resource_type
     - field.field.node.resource.field_summary
     - field.field.node.resource.field_tags
+    - field.field.node.resource.field_topics
     - node.type.resource
     - responsive_image.styles.narrow
   module:
@@ -44,8 +45,9 @@ third_party_settings:
         - group_card_content
         - node_title
         - field_summary
-        - field_resource_file
+        - field_topics
         - field_resource_link
+        - field_resource_file
     fields:
       node_title:
         plugin_id: node_title
@@ -62,8 +64,9 @@ third_party_settings:
       children:
         - node_title
         - field_summary
-        - field_resource_file
+        - field_topics
         - field_resource_link
+        - field_resource_file
       parent_name: ''
       weight: 1
       format_type: html_element
@@ -94,10 +97,11 @@ content:
     third_party_settings: {  }
   field_resource_file:
     type: file_default
-    weight: 4
+    weight: 6
     region: ds_content
     label: visually_hidden
-    settings: {  }
+    settings:
+      use_description_as_link_text: true
     third_party_settings: {  }
   field_resource_link:
     type: link
@@ -117,6 +121,14 @@ content:
     region: ds_content
     label: visually_hidden
     settings: {  }
+    third_party_settings: {  }
+  field_topics:
+    type: entity_reference_label
+    weight: 4
+    region: ds_content
+    label: visually_hidden
+    settings:
+      link: true
     third_party_settings: {  }
 hidden:
   body: true
