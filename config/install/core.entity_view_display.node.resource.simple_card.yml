@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.resource.field_resource_type
     - field.field.node.resource.field_summary
     - field.field.node.resource.field_tags
+    - field.field.node.resource.field_topics
     - node.type.resource
     - responsive_image.styles.narrow
   module:
@@ -99,4 +100,5 @@ hidden:
   field_resource_type: true
   field_summary: true
   field_tags: true
+  field_topics: true
   links: true
