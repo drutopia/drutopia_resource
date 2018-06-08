@@ -27,7 +27,7 @@ third_party_settings:
     layout:
       id: ds_2col
       library: ds/ds_2col
-      disable_css: false
+      disable_css: true
       entity_classes: all_classes
       settings:
         wrappers:
