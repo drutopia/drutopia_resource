@@ -6,6 +6,7 @@
   "homepage": "https://gitlab.com/drutopia/drutopia_resource",
   "minimum-stability": "dev",
   "require": {
+    "drupal/block_visibility_groups": "^1.0",
     "drupal/config_actions": "^1.0-beta1",
     "drupal/ctools": "^3.0",
     "drupal/drutopia_seo": "^1.0-alpha1",
