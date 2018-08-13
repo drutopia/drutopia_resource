@@ -1,5 +1,5 @@
 name: 'Drutopia Resource'
-description: 'Provides Resource content type and related configuration. A resource can be either a file, such as a PDF, or a link, such as a website URL.'
+description: 'Provides Resource content type and related configuration. A resource can be either a file, such as a PDF, or a link, such as a website URL or an embedded video.'
 type: module
 core: 8.x
 dependencies:
@@ -28,5 +28,6 @@ dependencies:
   - taxonomy
   - text
   - user
+  - video_embed_field
   - views
 package: Drutopia
