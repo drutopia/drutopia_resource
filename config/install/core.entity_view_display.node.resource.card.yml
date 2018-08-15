@@ -10,9 +10,11 @@ dependencies:
     - field.field.node.resource.field_resource_file
     - field.field.node.resource.field_resource_link
     - field.field.node.resource.field_resource_type
+    - field.field.node.resource.field_resource_video
     - field.field.node.resource.field_summary
     - field.field.node.resource.field_tags
     - field.field.node.resource.field_topics
+    - image.style.max_325x325
     - node.type.resource
     - responsive_image.styles.narrow
   module:
@@ -23,6 +25,7 @@ dependencies:
     - responsive_image
     - text
     - user
+    - video_embed_field
 third_party_settings:
   ds:
     layout:
@@ -42,8 +45,9 @@ third_party_settings:
     regions:
       ds_content:
         - field_image
-        - group_card_content
+        - field_resource_video
         - node_title
+        - group_card_content
         - field_summary
         - field_topics
         - field_resource_link
@@ -68,7 +72,7 @@ third_party_settings:
         - field_resource_link
         - field_resource_file
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: html_element
       format_settings:
         id: ''
@@ -115,6 +119,17 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+  field_resource_video:
+    type: video_embed_field_thumbnail
+    weight: 1
+    region: ds_content
+    label: visually_hidden
+    settings:
+      image_style: max_325x325
+      link_image_to: content
+    third_party_settings:
+      ds:
+        ds_limit: ''
   field_summary:
     type: text_default
     weight: 3

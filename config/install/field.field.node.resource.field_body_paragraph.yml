@@ -7,6 +7,7 @@ dependencies:
     - paragraphs.paragraphs_type.file
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 id: node.resource.field_body_paragraph
@@ -27,6 +28,7 @@ settings:
       text: text
       image: image
       file: file
+      video: video
     target_bundles_drag_drop:
       text:
         enabled: true
@@ -43,4 +45,16 @@ settings:
       update:
         weight: -7
         enabled: false
+      faq:
+        weight: 10
+        enabled: false
+      storyline_header:
+        weight: 14
+        enabled: false
+      storyline_item:
+        weight: 15
+        enabled: false
+      video:
+        enabled: true
+        weight: 18
 field_type: entity_reference_revisions
