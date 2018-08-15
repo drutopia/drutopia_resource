@@ -1,6 +1,6 @@
 {
   "name": "drupal/drutopia_resource",
-  "description": "Provides Resource content type and related configuration. A resource can be either a file, such as a PDF, or a link, such as a website URL or an embedded video.",
+  "description": "Provides Resource content type and related configuration. A resource can be a file, such as a PDF, a link, such as a website URL, or an embedded video.",
   "type": "drupal-module",
   "license": "GPL-2.0+",
   "homepage": "https://gitlab.com/drutopia/drutopia_resource",
