@@ -16,5 +16,12 @@
     "drupal/pathauto": "^1.0",
     "drupal/token": "^1.0",
     "drupal/video_embed_field": "^2.0"
+  },
+  "extra": {
+    "patches": {
+      "drupal/block_visibility_groups": {
+        "BlockVisibilityGroupedListBuilder - 8.6 Compatibility": "https://www.drupal.org/files/issues/2018-07-31/8.6-compat.patch"
+      }
+    }
   }
 }
