@@ -14,7 +14,7 @@ dependencies:
     - field.field.node.resource.field_summary
     - field.field.node.resource.field_tags
     - field.field.node.resource.field_topics
-    - image.style.max_325x325
+    - image.style.focal_point_650x390
     - node.type.resource
     - responsive_image.styles.narrow
   module:
@@ -125,7 +125,7 @@ content:
     region: ds_content
     label: visually_hidden
     settings:
-      image_style: max_325x325
+      image_style: focal_point_650x390
       link_image_to: content
     third_party_settings:
       ds:
