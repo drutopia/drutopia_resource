@@ -4,5 +4,4 @@ dependencies: {  }
 name: 'Resource type'
 vid: resource_type
 description: 'For categorizing resources.'
-hierarchy: 0
 weight: 0

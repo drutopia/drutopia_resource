@@ -251,7 +251,7 @@ display:
         title: Resources
         description: 'Get connected with our resources.'
         expanded: false
-        parent: ''
+        parent: 'menu_link_content:3f594be0-bb0f-4b30-923e-e7984983a0fd'
         weight: 0
         context: '0'
         menu_name: main
